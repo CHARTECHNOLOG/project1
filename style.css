@@ -1,0 +1,273 @@
+/* external css */
+   /* css reset */
+   *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+   }
+  
+   .logo{
+    float: left;
+    color: yellow;
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: bolder;
+   }
+   .info{
+     background-color: #000000de;
+     width: 100%;
+     height: 60px;
+     color: white;
+     margin: 0 auto;
+     text-align: center;
+     padding: 1rem;
+   }
+   .info p{
+    display:inline;
+   }
+   .info button{
+    background: yellow;
+    padding: 0.5rem;
+    border: none;
+    margin: 0 5px 0 5px;
+   }
+   button:last-of-type{
+    background-color: aqua;
+   }
+   .info a{
+    color: black;
+    text-decoration: none;
+    font-family: monospace;
+   }
+   /* media query*/
+        @media screen and (max-width: 480px) {
+            .info {
+                    width: 100%;
+                    height: 40px;
+                }
+            
+                .logo {
+                    font-size: 0.6rem;
+                }
+            
+                .info p {
+                    font-size: 0.6rem;
+                }
+            
+                .info button {
+                    padding: 0rem;
+                    width: 90px;
+                    margin-bottom: 8px;
+                }
+            
+                .info a {
+                    font-size: 1rem;
+                }
+             nav ul{
+                width: 100%;
+                height: 30px;
+             }
+                nav ul li a {
+                    padding: 0.1rem;
+                    font-size: 0.6rem;
+                }
+
+        }
+   /* nav section */
+   nav{
+     background-color: white;
+      width: 100%;
+        height: 60px;
+        margin: 0 auto;
+            text-align: center;
+            
+   }
+    nav ul li{
+        display: inline-block;
+        padding: 1rem;  
+    }
+    nav ul li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+        
+    /* banner */
+    .banner{
+        background: url(images/tech1.jpg);
+        width: 100%;
+        height: 50vh;
+        background-position: center;
+        background-size: cover;
+        color: rgb(238, 215, 7);
+        padding: 50px;
+        font-size: 1.7rem;
+        font-style: italic;
+    }
+    
+    .banner button a{
+           text-align: center;
+           text-decoration: none;
+           font-size: 0.3rem;
+           text-transform: uppercase;
+    }
+    /* main section for chartech-courses */
+    .chartech-courses{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 60px;
+            margin-bottom: 30px;
+    }
+    .chartech-courses .container-con{
+           background-color: rgb(255, 255, 255);
+           width: 25%;
+           height: 45vh;
+           box-shadow: 2px 3px 6px 4px rgb(148, 149, 241);
+           border-radius: 2rem;
+           text-align: center;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           padding: 40px;
+           
+    }
+    .chartech-courses .container-con:hover{
+        background-color:aqua;
+        color: white;
+    }
+        .container-con button {
+            padding: 10px;
+            margin-top: 2px;
+            background-color: yellow;
+            color: black;
+            border: 0.5px solid palevioletred;
+            border-radius: 15px;
+        }
+    
+        .container-con a {
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+        }
+    
+        .tutors img {
+            border-radius: 50%;
+            width: 300px;
+            height: auto;
+            box-shadow: 2px 3px 6px 5px rgb(247, 76, 24);
+            margin-bottom: 20px;
+        }
+         @media screen and (max-width: 480px) {
+    .chartech-courses{
+        display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 60px;
+            margin-bottom: 30px;
+    }
+    .chartech-courses .container-con{
+        background-color: rgb(255, 255, 255);
+            width: 80%;
+            height: 40vh;
+            box-shadow: 2px 3px 6px 4px rgb(148, 149, 241);
+            border-radius: 2rem;
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            padding:10px;
+            margin: 5px;
+    }
+
+         }
+    /* tutors section */
+    .tutors{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        margin-top: 100px;
+        text-align: center;
+        margin-bottom: 50px;
+        box-shadow: 2px 3px 6px 2px rgb(148, 149, 241);
+        padding: 70px;
+        border-radius: 30px;
+        background-color: rgb(211, 240, 240);
+    }
+         @media screen and (max-width: 480px) {
+            .tutors {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    align-content: center;
+                    margin-top: 100px;
+                    text-align: center;
+                    margin-bottom: 50px;
+                    box-shadow: 2px 3px 6px 2px rgb(148, 149, 241);
+                    padding: 30px;
+                    border-radius: 30px;
+                    background-color: rgb(211, 240, 240);
+                    margin: 20px;
+                }
+                .tutors p{
+                    margin-bottom: 40px;
+                }
+         }
+    
+    .tutor h4{
+        text-transform: uppercase;
+    }
+    /* contact page */
+    .contact{
+        text-align: center;
+        width: 60%;
+        height: auto;
+        margin: 10px auto;
+        margin-top: 100px;
+        background-color: aqua;
+        padding: 50px;
+        box-shadow: 5px 6px 6px 5px rgb(148, 149, 241);
+        border-radius: 50px;
+        margin-bottom: 50px;
+    }
+   .contact .submit{
+      padding: 5px;
+      width: 60px;
+    }
+         @media screen and (max-width: 480px) {
+         }
+                 .contact {
+                     text-align: center;
+                     width: 70%;
+                     height: auto;
+                     margin: 10px auto;
+                     margin-top: 100px;
+                     background-color: aqua;
+                     padding: 50px;
+                     box-shadow: 5px 6px 6px 5px rgb(148, 149, 241);
+                     border-radius: 50px;
+                     margin-bottom: 50px;
+                 }
+    footer{
+        background-color: black;
+        width: 100%;
+        height: 25vh;
+        color: white;
+        text-align: center;
+        padding: 50px;
+    }
+    
+
+    
+    
+    
